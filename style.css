@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+}
+
+.navbar .container {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin-top: 20px;
+}
+
+.logo {
+    color: #D2872C;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #766F68;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 0px 10px;
+}
+
+a:hover {
+    color: #D2872C;
+}
+
+.caixa-direita {
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+    margin-top: 70px;
+    color: #766F68;
+    font-size: 29px;
+    position: absolute;
+    z-index: 1;
+}
+
+.caixa-direita p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 27px;
+}
+
+button {
+    width: 240px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #D2872C;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+img {
+    position: absolute;
+    height: 450px;
+    float: right;
+    margin-left: 480px;
+    top: 170px;
+}
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+    margin-right: 40px;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: black;
+    margin: 8px;
+}
+
+@media screen and (max-width: 800px) {
+    .logo{
+        margin-left: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    li{
+        margin-top: 10px;
+    }
+
+    .caixa-direita{
+        margin-left: 50px;
+    }
+
+    img{
+        display: none;
+    }
+
+    button{
+        margin-bottom: 30px;
+    }
+
+    nav ul {
+        /*display: none;*/
+        position: relative;
+        top: 50px;
+        right: 120px;
+        overflow: hidden;
+    }
+
+    .mobile-menu {
+        display: block;
+        margin-left: 60px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+}
